@@ -51,8 +51,8 @@ public class HelloController {
                         //String eredmeny1 = elsoEredmenyLabel.getText();
                         //String eredmeny2 = masodikEredmenyLabel.getText();
                         double diszkriminans = (b * b) - (4 * a * c);
-                        double megoldoKeplet1 = ((-b + Math.sqrt(diszkriminans)) / (2 * a));
-                        double megoldoKeplet2 = ((-b - Math.sqrt(diszkriminans)) / (2 * a));
+                        double megoldoKeplet1 = (-b + Math.sqrt(diszkriminans)) / 2 * a;
+                        double megoldoKeplet2 = (-b - Math.sqrt(diszkriminans)) / 2 * a;
                         if (diszkriminans < 0) {
                             elsoEredmenyLabel.setText("Nem oldható meg a valós számok halmazán!");
                             masodikEredmenyLabel.setText("");
@@ -64,7 +64,7 @@ public class HelloController {
                             }
                             else {
                                 elsoEredmenyLabel.setText("x1=" + megoldoKeplet1);
-                                masodikEredmenyLabel.setText("x2=");
+                                masodikEredmenyLabel.setText("x2=" + megoldoKeplet2);
                             }
                         }
 
