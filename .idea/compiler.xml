@@ -15,7 +15,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="masodfoku" options="--add-exports jdk.hotspot.agent/sun.jvm.hotspot.debugger.win32.coff=hu.petrik.masodfoku" />
+      <module name="masodfoku" options="" />
     </option>
   </component>
 </project>
