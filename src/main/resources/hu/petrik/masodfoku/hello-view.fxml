@@ -30,7 +30,7 @@
         <TextField fx:id="cSzamInput" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="30.0" promptText="c" text="0" GridPane.columnIndex="4" />
         <Label text="x+" GridPane.columnIndex="3" />
         <Label text="=0" GridPane.columnIndex="5" />
-        <Label fx:id="elsoEredmenyLabel" text="x1=" GridPane.columnSpan="2" GridPane.rowIndex="2" />
-        <Label fx:id="masodikEredmenyLabel" text="x2=" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+        <Label fx:id="elsoEredmenyLabel" text="x1=" GridPane.columnSpan="8" GridPane.rowIndex="2" />
+        <Label fx:id="masodikEredmenyLabel" text="x2=" GridPane.columnSpan="8" GridPane.rowIndex="3" />
     </children>
 </GridPane>
