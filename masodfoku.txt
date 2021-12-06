@@ -1,0 +1,14 @@
+A melléklet drótváz alapján készíts egy alkalmazást, amely képes egy másodfokú egyenletet megoldani.
+
+Az művelet elvégzése előtt a beviteli adatokat ellenőrizd:
+	- Minden mező kitöltése kötelező
+	- Csak számot adhat meg
+	
+Amennyiben a bevitt adatokkal a másodfokú egyenlet nem oldható meg (Diszkrimináns < 0) akkor a "Nem oldható meg a valós számok halmazán" felirat jelenjen meg.
+
+Amennyiben az egyenletnek pontosan egy megoldása van úgy a megoldást 1 sorba írd ki 
+	pl.:
+		x1 = 3
+		x2 = 3
+	helyett
+		x1 = x2 = 3
