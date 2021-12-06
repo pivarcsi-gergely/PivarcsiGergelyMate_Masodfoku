@@ -22,12 +22,11 @@ public class HelloController {
     private double a, b, c;
 
     public void szamol() {
-        try{
+        try {
             a = Double.parseDouble(aSzamInput.getText().trim());
             b = Double.parseDouble(bSzamInput.getText().trim());
             c = Double.parseDouble(cSzamInput.getText().trim());
-        }
-        catch (NumberFormatException e){
+        } catch (NumberFormatException e) {
             Alert felugroAblak = new Alert(Alert.AlertType.ERROR, e.getMessage());
             felugroAblak.show();
         }
@@ -36,12 +35,11 @@ public class HelloController {
         TimerTask egyetlenTTask = new TimerTask() {
             @Override
             public void run() {
-                Platform.runLater(()-> {
+                Platform.runLater(() -> {
                     if (aSzamInput == null || bSzamInput == null || cSzamInput == null) {
                         Alert felugroAblak2 = new Alert(Alert.AlertType.WARNING, "Minden mező kitöltése kötelező");
                         felugroAblak2.show();
-                    }
-                    else if (a < 0 || b < 0 || c < 0){
+                    } else if (a < 0 || b < 0 || c < 0) {
                         Alert felugroAblak3 = new Alert(Alert.AlertType.ERROR, "Nem oldható meg a valós számok halmazán");
                         felugroAblak3.show();
                     }
@@ -52,13 +50,10 @@ public class HelloController {
                     else {
                         //String eredmeny1 = elsoEredmenyLabel.getText();
                         //String eredmeny2 = masodikEredmenyLabel.getText();
-                        double determinans = b*b - 4*a*c;
-                        double negativA = a * -1;
-                        double negativB = b * -1;
-                        double negativC = c * -1;
-                        double megoldoKeplet1 = (negativB + Math.pow(determinans, 0.5)) / (2*a);
-                        double megoldoKeplet2 = (negativB - Math.pow(determinans, 0.5)) / (2*a);
-                        double megoldoKepletS = -b;
+                        double diszkriminans = (b * b) - (4 * a * c);
+                        double megoldoKeplet1 = (-b + Math.sqrt(diszkriminans) )/ (2 * a);
+                        double megoldoKeplet2 = (-b - Math.sqrt(diszkriminans) )/ (2 * a);
+                        System.out.println(megoldoKeplet1);
                         elsoEredmenyLabel.setText("x1=" + megoldoKeplet1);
                         masodikEredmenyLabel.setText("x2=" + megoldoKeplet2);
                     }
